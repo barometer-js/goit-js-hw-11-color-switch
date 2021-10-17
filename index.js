@@ -32,7 +32,8 @@ function changeBodyColor() {
 
   intervalId = setInterval(() => {
     console.log("body color is changed");
-    refs.body.style.backgroundColor = "#4CAF50";
+    let i = randomIntegerFromInterval(0, colors.length - 1);
+    refs.body.style.backgroundColor = colors[i];
   }, DELAY);
 }
 
